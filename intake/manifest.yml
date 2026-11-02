@@ -1,0 +1,70 @@
+version: 1
+intake_name: "initial-bootstrap"
+prepared_by: "XXXX"
+prepared_date: "YYYY-MM-DD"
+notes: ""
+
+# Defaults apply only when an item does not override them.
+defaults:
+  language: ""
+  region_or_variant: ""
+  authoring: "unknown"
+  approval_status: "unknown"
+  learning_weight: "medium"
+
+sources:
+  - id: "source-001"
+    title: ""
+
+    # file, folder, url, pasted_text, conversation, or external_location
+    source_type: "file"
+    location: "sources/"
+
+    # blog, linkedin, facebook, discord, teams, email,
+    # conversation, notes, draft, github, or other
+    platform: ""
+
+    # article, post, message, thread, comment, draft,
+    # conversation, notes, before_after_pair, or other
+    content_type: ""
+
+    # en, zh-Hant, zh-Hans, bilingual, mixed, or another BCP 47 tag
+    language: ""
+    region_or_variant: ""
+
+    # short, normal, long, detailed, or not_applicable
+    length: ""
+
+    # Optional perspective used in the source, not a separate personality.
+    perspective: ""
+    audience: ""
+    topics: []
+
+    # self_written, ai_assisted_approved, ai_draft_edited,
+    # rejected, reference_only, or unknown
+    authoring: "unknown"
+
+    # published, approved_unpublished, final_private, draft,
+    # rejected, outdated, or unknown
+    approval_status: "unknown"
+
+    created_date: ""
+    last_revised_date: ""
+
+    # high, medium, low, or negative
+    learning_weight: "medium"
+
+    representative_of_current_self: true
+    safe_to_use_for_learning: true
+    safe_to_commit: false
+
+    # For edited or rejected work, describe what changed and why.
+    paired_source_id: ""
+    edits_or_feedback: ""
+
+    # Optional limits, such as "learn style only" or
+    # "do not learn personal opinions from this item".
+    permitted_learning: []
+    excluded_learning: []
+
+    notes: ""
